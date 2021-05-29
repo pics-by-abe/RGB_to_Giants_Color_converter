@@ -30,8 +30,8 @@ namespace RGB_to_Giants_Color_Converter
 
             if (((double)Rint / (double)255) < 0.04045)
             {
-                double Rint1 = Rint / 255;
-                RintFinal = (Rint1 * 12.92).ToString().Replace(",", ".");
+                double Rint1 = (double)Rint / (double)255;
+                RintFinal = Math.Round((Rint1 * 12.92), 3).ToString().Replace(",", ".");
             }
             else
             {
@@ -48,8 +48,8 @@ namespace RGB_to_Giants_Color_Converter
 
             if (((double)Gint / (double)255) < 0.04045)
             {
-                double Gint1 = Gint / 255;
-                GintFinal = (Gint1 * 12.92).ToString().Replace(",", ".");
+                double Gint1 = (double)Gint / (double)255;
+                GintFinal = Math.Round((Gint1 * 12.92), 3).ToString().Replace(",", ".");
             }
             else
             {
@@ -67,8 +67,8 @@ namespace RGB_to_Giants_Color_Converter
 
             if (((double)Bint / (double)255) < 0.04045)
             {
-                double Bint1 = Bint / 255;
-                BintFinal = (Bint1 * 12.92).ToString().Replace(",", ".");
+                double Bint1 = (double)Bint / (double)255;
+                BintFinal = Math.Round((Bint1 * 12.92), 3).ToString().Replace(",", ".");
             }
             else
             {
