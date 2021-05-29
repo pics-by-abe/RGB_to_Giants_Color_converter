@@ -62,6 +62,7 @@ namespace RGB_to_Giants_Color_Converter
             
 
 
+
             string Btxt = txtColorB.Text;
             int Bint = int.Parse(Btxt);
 
